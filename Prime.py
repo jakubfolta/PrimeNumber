@@ -5,7 +5,7 @@ def is_prime(x):
     return True
   for n in range(2, x - 1):
     if x % n == 0:
-      return False
-    return True
+      return False 
+    return True # other option else: return True
 
 print (is_prime(5))
