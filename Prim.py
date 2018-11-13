@@ -3,10 +3,10 @@ def prim(num):
     return True
   if num < 2:
     return False
-  for dig in range(2, num -1):
+  for dig in range(2, num - 1):
     if num % dig == 0:
       return False
     else:
       return True
 
-print (prim(7))
+print (prim(9))

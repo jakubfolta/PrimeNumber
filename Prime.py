@@ -1,11 +1,14 @@
-def is_prime(x):
-  if x < 2:
+def is_prime(digit):
+  if digit < 2:
     return False
-  if x == 2:
+  elif digit == 2:
     return True
-  for n in range(2, x - 1):
-    if x % n == 0:
-      return False 
-    return True # other option else: return True
+  else:
+    for number in range(2, digit):
+      if digit % number == 0:
+        return False
+        break
+    else:
+        return True
 
-print (is_prime(5))
+print(is_prime(21))
