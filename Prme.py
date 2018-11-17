@@ -6,6 +6,6 @@ def prime(number):
   for char in range(2, number - 1):
     if number % char == 0:
       return False
-    return True
+  return True
 
-print(prime(6))
+print(prime(21))
