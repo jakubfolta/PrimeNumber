@@ -20,8 +20,11 @@ def checkIfNumberIsPrime(number):
     return False
   for x in range(2, number - 1):
     if number % x == 0:
+      print(str(number) + ' is not a prime number.')
       return False
-      print(number + ' is not a prime number.')
       break
   else:
-    return True
+      print(str(number) + ' is a prime number!')
+      return True
+        
+print(checkIfNumberIsPrime(12))
