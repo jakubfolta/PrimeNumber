@@ -25,4 +25,17 @@ def prime(number):
     else:
       return True
 
-print(prime(19))
+print(prime(18))
+
+def check_if_prime_number(number):
+  if number < 2:
+    return False
+  else:
+    for x in range(2, number - 1):
+      if number % x == 0:
+        return False
+    else:
+      return True
+
+print(check_if_prime_number(15))
+    
