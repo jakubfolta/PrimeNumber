@@ -5,4 +5,9 @@ def check_if_prime(number):
         return False
     for x in range(2, number - 1):
         if number % x == 0:
-            
+            return False
+            break
+    else:
+        return True
+
+print(check_if_prime(5))
